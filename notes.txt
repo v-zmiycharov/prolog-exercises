@@ -1,0 +1,20 @@
+Facts:
+- fat(john). = John is fat
+- brown(dog). = dog is brown
+- likes(suzie, bobby). = suzie likes bobby
+
+Rules:
+- dating(x,y) :-
+		likes(x,y),
+		likes(y,x).
+- AND = ,
+- IF = :-
+- OR = ;
+- NOT = NOT
+
+В prolog:
+- ['{{path}}'].
+- likes(dan, sally) = true/false и т.н.
+- weather(City, summer, hot). -> City = phoenix (градовете, в които е hot през лятото)
+- weather(City, _, warm). -> City = la, phoenix (градовете, в които има сезон, през който е warm, сезонът не ни интересува (_))
+- weather(City, summer, hot), weather(City, winter, warm). (, = AND)
