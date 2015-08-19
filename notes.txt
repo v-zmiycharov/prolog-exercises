@@ -33,3 +33,7 @@ avg_temp_cels(Location, C_Temp) :-
 - [_,_, [_|X]|_] = [[],dead(z),[2, [b,c]], [], z, [2, [b,c]]]. -> x=[b,c]
 
 - member(X, [23,25,67,12,25,19,9,6]), Y is X*X, Y<400.
+
+
+atomic ???
+! ???
