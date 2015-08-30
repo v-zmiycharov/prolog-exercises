@@ -1,8 +1,3 @@
-replace([],_,_,[]).
-
-replace([X|T],X,Y,[Y|T1]):-
-	replace(T,X,Y,T1).
-
-replace([H|T],X,Y,[H|T1]):-
-	H\=X,
-	replace(T,X,Y,T1).
+powerset([], []).
+powerset([H|T], P) :- powerset(T,P).
+powerset([H|T], [H|P]) :- powerset(T,P).
